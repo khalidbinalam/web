@@ -1,1320 +1,874 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="google-site-verification" content="Ovr7nQPRH8D4gV-niAqdzL3eDwyRNw85_swa_m7KPkE">
-    <meta charset="UTF-8">
+<!-- saved from url=(0042)file:///C:/Users/Zalvix/Desktop/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khalid Bin Alam | Audio Engineer, Artist, DJ | PlayLSD Records</title>
-    <meta name="description" content="Professional website for Khalid Bin Alam, showcasing music production (Zalvix, Luminous Lullabies), DJ mixes, audio engineering services, PlayLSD record label, and curated playlists.">
+    <meta name="description" content="Portfolio of Khalid Bin Alam - Electronic Music Producer, Audio Engineer, Curator, DJ, and Founder of PlayLSD.">
+    <meta name="keywords" content="Khalid Bin Alam, Zalvix, Luminous Lullabies, PlayLSD, Audio Engineer, Music Producer, DJ, Electronic Music, Bangladesh, Playlist Curator, Tech Entrepreneur, অপূর্ব">
+    <title>Khalid Bin Alam - Visionary Producer &amp; PlayLSD Founder</title>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./index_files/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
 
-    <!-- Favicon (Optional but Recommended) -->
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<meta name="google-site-verification" content="Ovr7nQPRH8D4gV-niAqdzL3eDwyRNw85_swa_m7KPkE" />
     <style>
-        /* ------------------------- */
-        /* --- CSS Starts Here --- */
-        /* ------------------------- */
-
-        /* --- Variables & Base --- */
+        /* CSS Reset and Base Styles */
         :root {
-            --bg-color: #121212; /* Very dark grey */
-            --primary-color: #1e1e1e; /* Slightly lighter dark grey */
-            --secondary-color: #2a2a2a; /* Medium dark grey */
-            --accent-color: #00aaff; /* Vibrant blue accent */
-            --accent-hover: #0088cc;
-            --text-color: #e0e0e0; /* Light grey text */
-            --text-muted: #a0a0a0; /* Muted grey text */
-            --text-dark: #111; /* Dark text for button hover */
-            --heading-font: 'Poppins', sans-serif;
-            --body-font: 'Inter', sans-serif;
-            --border-radius: 8px;
-            --transition-speed: 0.3s;
-            --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            --primary-bg-color: #121212;
+            --secondary-bg-color: #1e1e1e;
+            --card-bg-color: #242424; 
+            --text-color: #e0e0e0;
+            --primary-text-color: #ffffff;
+            --accent-color: #00CFE8; /* Vibrant Cyan/Teal */
+            --accent-hover-color: #00A8B5;
+            --border-color: #333333;
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
-
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 70px; /* Adjust based on header height */
         }
 
         body {
-            font-family: var(--body-font);
-            background-color: var(--bg-color);
+            font-family: var(--font-secondary);
+            background-color: var(--primary-bg-color);
             color: var(--text-color);
             line-height: 1.7;
-            font-size: 16px;
-            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: var(--heading-font);
-            font-weight: 700;
-            color: #ffffff;
+            font-family: var(--font-primary);
+            color: var(--primary-text-color);
             margin-bottom: 1rem;
-            line-height: 1.3;
         }
 
-        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; }
-        h3 { font-size: 1.5rem; color: var(--accent-color); }
-        h4 { font-size: 1.2rem; color: #eee; font-weight: 600; margin-bottom: 0.5rem; /* Adjusted for playlist title */ } /* Tighter margin below H4 */
+        h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background-color: var(--accent-color);
+            border-radius: 2.5px;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+        }
 
         p {
-            margin-bottom: 1rem;
-            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
         }
-        p:last-child { margin-bottom: 0; } /* Remove margin from last p in a container */
 
         a {
             color: var(--accent-color);
             text-decoration: none;
-            transition: color var(--transition-speed) ease;
         }
-
         a:hover {
-            color: var(--accent-hover);
+            color: var(--accent-hover-color);
             text-decoration: underline;
-            text-decoration-thickness: 2px;
         }
 
-        img, iframe {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: var(--border-radius);
-        }
-
-        iframe {
-            border: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        /* --- Utility Classes --- */
         .container {
-            width: 90%;
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 5rem 1rem; /* Adjusted vertical padding */
+            padding: 0 25px;
         }
 
-        .text-center { text-align: center; }
-        .mb-2 { margin-bottom: 2rem !important; }
-        .mt-3 { margin-top: 3rem !important; } /* Added margin top utility */
+        section {
+            padding: 80px 0;
+        }
+        section.alternate-bg { 
+            background-color: var(--secondary-bg-color);
+        }
 
-        /* --- Header & Navigation --- */
-        #main-header {
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: var(--accent-color);
+            color: var(--primary-bg-color) !important; /* Ensure text color contrasts with button */
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-family: var(--font-primary);
+            letter-spacing: 1px;
+            text-decoration: none !important; /* Remove underline from buttons */
+            font-size: 0.95rem;
+        }
+        .btn:hover {
+            background-color: var(--accent-hover-color);
+            color: var(--primary-bg-color) !important;
+            transform: translateY(-3px);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent-color) !important;
+            border: 2px solid var(--accent-color);
+        }
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-bg-color) !important;
+        }
+
+        /* Header / Navbar */
+        .navbar {
             position: sticky;
             top: 0;
             left: 0;
             width: 100%;
+            background-color: rgba(18, 18, 18, 0.9); /* Darker, slightly more transparent */
+            backdrop-filter: blur(8px);
+            padding: 1rem 0;
             z-index: 1000;
-            background-color: rgba(18, 18, 18, 0.9); /* Semi-transparent dark */
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            transition: background-color var(--transition-speed) ease;
+            border-bottom: 1px solid var(--border-color);
         }
-
-        #navbar {
+        .navbar .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 1.5rem;
-            height: 70px;
         }
-
-        #navbar .logo {
-            font-family: var(--heading-font);
-            font-size: 1.4rem; /* Slightly adjusted */
-            font-weight: 700;
-            color: #fff;
+        .navbar .logo {
+            font-size: 1.5rem; /* Adjusted for longer text */
+            font-weight: 900; /* Bolder */
+            color: var(--primary-text-color);
+            font-family: var(--font-primary);
             text-decoration: none;
+            white-space: nowrap; /* Prevent logo from wrapping */
         }
-         #navbar .logo span { color: var(--accent-color); }
-
-        #navbar ul {
+        .navbar .logo span {
+            color: var(--accent-color);
+        }
+        .navbar .nav-links {
             list-style: none;
             display: flex;
-            gap: 1.5rem;
         }
-
-        #navbar ul li a {
+        .navbar .nav-links li {
+            margin-left: 30px;
+        }
+        .navbar .nav-links a {
             color: var(--text-color);
-            font-weight: 500;
-            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
             text-decoration: none;
-            padding: 0.5rem 0;
-            position: relative;
-            transition: color var(--transition-speed) ease;
         }
-
-        #navbar ul li a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent-color);
-            transition: width var(--transition-speed) ease;
+        .navbar .nav-links a:hover,
+        .navbar .nav-links a.active {
+            color: var(--accent-color);
         }
-
-        #navbar ul li a:hover,
-        #navbar ul li a.active {
-            color: #fff;
-        }
-        #navbar ul li a:hover::after,
-        #navbar ul li a.active::after {
-            width: 100%;
-        }
-
-        /* Mobile Nav Toggle */
         .menu-toggle {
             display: none;
-            flex-direction: column;
-            cursor: pointer;
+            font-size: 1.8rem;
+            color: var(--primary-text-color);
             background: none;
             border: none;
-            padding: 0;
-            z-index: 1100; /* Ensure it's above nav links */
-        }
-        .menu-toggle span {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color: var(--text-color);
-            margin: 4px 0;
-            transition: all var(--transition-speed) ease;
+            cursor: pointer;
         }
 
-        /* --- Hero Section --- */
+        /* Hero Section */
         #hero {
-            min-height: 90vh;
+            min-height: 100vh;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
             text-align: center;
-            position: relative;
-            padding: 4rem 1rem;
-            background: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHNlYXJjaHw1fHxtdXNpYyUyMGRqfGVufDB8fHx8MTcxOTE5OTM1OHww&ixlib=rb-4.0.3&q=85') no-repeat center center/cover;
-            background-attachment: fixed;
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.95)), url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXVkaW8lMjBlcXVpcG1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=80') no-repeat center center/cover;
+            padding: 0 20px;
+            color: var(--primary-text-color);
         }
-
-        #hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(18, 18, 18, 0.8); /* Slightly darker overlay */
-            z-index: 1;
+        #hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            font-family: var(--font-primary);
+            line-height: 1.2;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 850px; /* Slightly wider max-width */
-        }
-
-        .hero-content h1 {
-            font-size: 3.4rem; /* Slightly adjusted */
-            margin-bottom: 0.5rem; /* Tighter spacing */
-            color: #fff;
-            font-weight: 700;
-        }
-
-        .hero-content .subtitle {
-            font-size: 1.3rem; /* Slightly adjusted */
-            font-family: var(--body-font);
-            color: var(--text-muted);
-            margin-bottom: 1.5rem; /* Tighter spacing */
-            font-weight: 400;
-            max-width: 700px; /* Limit subtitle width */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-content .hero-buttons {
-            margin-top: 2.5rem; /* Increased spacing for more buttons */
-            display: flex;
-            flex-wrap: wrap; /* Allow buttons to wrap */
-            justify-content: center; /* Center buttons */
-            gap: 1rem; /* Spacing between buttons */
-        }
-
-        /* --- Buttons --- */
-        .btn {
-            display: inline-block;
-            padding: 0.9rem 1.8rem;
-            background-color: var(--accent-color);
-            color: #fff; /* Initial text color */
-            border: 2px solid var(--accent-color); /* Add border for consistency */
-            border-radius: var(--border-radius);
-            font-family: var(--heading-font);
-            font-weight: 600;
-            font-size: 0.9rem; /* Adjusted size for potentially more buttons */
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-            box-shadow: 0 4px 15px rgba(0, 170, 255, 0.2);
-            text-align: center;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-hover);
-            border-color: var(--accent-hover); /* Keep border consistent */
-            color: var(--text-dark); /* Text turns dark on hover */
-            transform: translateY(-3px);
-            text-decoration: none;
-             box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3); /* Adjusted shadow color */
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            border: 2px solid var(--accent-color);
+        #hero h1 span {
             color: var(--accent-color);
-            box-shadow: none;
         }
-
-        .btn-secondary:hover {
-            background-color: var(--accent-color); /* Fill background on hover */
-            border-color: var(--accent-color);
-            color: var(--text-dark); /* Text turns dark on hover */
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 170, 255, 0.3);
-        }
-
-        .btn i { margin-right: 0.5em; } /* Space icon and text in button */
-
-
-        /* --- Section Styles --- */
-        section {
-            background-color: var(--primary-color);
-            margin-bottom: 2px; /* Thin line between sections */
-        }
-        #hero + section { margin-top: 0; } /* No margin after hero */
-        section:last-of-type { margin-bottom: 0; }
-
-
-        .section-intro {
-            text-align: center;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+        #hero p.subtitle {
+            font-size: 1.6rem;
             margin-bottom: 3rem;
-            color: var(--text-muted); /* Use muted text for intros */
-            font-size: 1.05rem;
+            max-width: 700px;
+            color: var(--text-color);
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        #hero .cta-buttons .btn {
+            margin: 0.5rem 10px;
         }
 
-        /* --- About Section --- */
-        #about .about-content {
-            display: flex;
-            gap: 3rem;
-            align-items: flex-start;
-        }
-         #about .about-text {
-             flex: 2;
-         }
-        #about .about-image {
-            flex: 1;
-            text-align: center;
-            margin-top: 1rem; /* Align better with text */
-        }
-         #about .about-image img {
-             max-width: 280px; /* Slightly smaller */
-             border-radius: 50%;
-             box-shadow: var(--box-shadow);
-             border: 4px solid var(--accent-color); /* Thicker border */
-         }
-
-        .artist-alias {
-            font-weight: 600;
-            color: var(--accent-color);
-            cursor: pointer;
-            display: inline-block;
-            margin-bottom: 0.5rem;
-            font-size: 1.15rem; /* Slightly larger */
-            transition: color 0.2s ease;
-            padding: 0.3rem 0; /* Add slight padding */
-        }
-        .artist-alias:hover { color: var(--accent-hover); }
-        .artist-alias .toggle-icon {
-             display: inline-block;
-             margin-left: 8px;
-             transition: transform var(--transition-speed) ease;
-         }
-        .artist-alias.open .toggle-icon { transform: rotate(90deg); }
-
-
-        .artist-details {
-            display: none; /* Keep hidden */
-            margin-top: 5px;
-            margin-bottom: 1rem;
-            padding: 1.2rem 1.5rem; /* Slightly more padding */
-            background-color: var(--secondary-color);
-            border-left: 4px solid var(--accent-color);
-            border-radius: 0 var(--border-radius) var(--border-radius) 0;
-            transition: opacity var(--transition-speed) ease, max-height var(--transition-speed) ease;
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-        }
-        .artist-details p { font-size: 0.95rem; color: var(--text-color); }
-        .artist-details p:last-child { margin-bottom: 0; } /* Override general p rule */
-        .artist-details strong { color: var(--accent-color); font-weight: 600; }
-
-        .artist-details.visible {
-            display: block;
-            max-height: 600px; /* Increased max-height */
-            opacity: 1;
-        }
-
-        .artist-socials {
-            margin-top: 1rem;
-            padding-top: 0.8rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            gap: 1rem;
+        /* About Section */
+        #about .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
             align-items: center;
         }
-        .artist-socials a {
-            font-size: 1.5rem; /* Smaller than main contact icons */
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;
+        #about .about-text p {
+            font-size: 1.1rem;
         }
-        .artist-socials a:hover {
+        #about .about-text strong {
             color: var(--accent-color);
-            transform: scale(1.1);
-            text-decoration: none; /* Remove underline on icon hover */
+        }
+
+        /* PlayLSD Ecosystem Section */
+        #playlsd-ecosystem .subsection {
+            margin-bottom: 3rem;
+            background-color: var(--card-bg-color);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        #playlsd-ecosystem .subsection h3 {
+            margin-bottom: 1.5rem;
+            text-align: left;
+            font-size: 2rem;
+        }
+        .featured-playlists-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .playlist-card {
+            background-color: var(--secondary-bg-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+        .playlist-card:hover {
+            transform: translateY(-5px);
+        }
+        .playlist-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-text-color);
+        }
+        .playlist-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        .tech-stack-list li, .community-list li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            list-style: none; /* Ensure no default list style */
+        }
+        .tech-stack-list i, .community-list i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            width: 20px; /* Align icons */
+        }
+        #about ul {
+            list-style: none; /* Remove default bullets from About section list */
+            padding-left: 0;
+        }
+        #about ul li {
+            padding-left: 1.5em; /* Indent list items */
+            text-indent: -1.5em; /* Bring bullet/emoji back */
+            margin-bottom: 0.5rem;
         }
 
 
-        /* --- Music & DJ Section Common --- */
-        .media-grid {
+        /* Services/Skills Section */
+        .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+        }
+        .skill-category {
+            background-color: var(--card-bg-color);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .skill-category h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skill-category li {
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .skill-category li i {
+            color: var(--accent-color);
+            margin-right: 12px;
+            font-size: 1.2rem;
+            width: 20px; /* Align icons */
         }
 
-        .media-item {
-            background-color: var(--secondary-color);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-            display: flex; /* Use flexbox for better internal alignment */
+        /* Portfolio Section (Original Music) */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .portfolio-item {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
             flex-direction: column;
         }
-        .media-item:hover {
+        .portfolio-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
-        .media-item h4 { margin-bottom: 0.5rem; color: #fff; /* White for main items */ }
-        .media-item iframe { flex-grow: 1; /* Allow iframe to fill space */ margin-bottom: 1rem; }
-        .media-item .platform-links {
-            text-align: center;
-            margin-top: auto; /* Push links to bottom if iframe shrinks */
-            font-size: 0.9rem;
+        .portfolio-item-embed {
+            flex-grow: 1; /* Allow embed to take space */
         }
-        .media-item .platform-links a { margin: 0 0.5rem; }
-
-        /* --- PlayLSD Section --- */
-        #playlsd {
-            background-color: var(--secondary-color);
-            position: relative;
+        .portfolio-item-embed iframe {
+            display: block;
+            border: none;
+            width: 100%;
+            min-height: 120px; /* Minimum height for smaller embeds */
         }
-        #playlsd .container { padding-top: 4rem; padding-bottom: 4rem; } /* Adjust padding */
-         #playlsd h2 {
-             color: var(--accent-color);
-         }
-        .playlsd-logo {
-             max-width: 150px;
-             margin: 0 auto 2rem auto;
-         }
-        .playlsd-description {
-             max-width: 750px;
-             margin: 0 auto 2.5rem auto; /* Adjust margin */
-             text-align: center;
-             font-size: 1.1rem;
-             color: var(--text-color);
+        .portfolio-item-content {
+            padding: 1.5rem;
         }
-         .playlsd-description strong {
-             color: var(--accent-color);
-             font-weight: 600;
-         }
-         .submission-cta {
-             text-align: center;
-             margin-top: 3rem;
-         }
-         .submission-cta h3 { color: #fff; }
-
-         #playlsd .media-item h4 { color: var(--accent-color); /* Accent color for label section headers */ }
-
-
-        /* --- Services Section --- */
-        #services .service-item {
-            background-color: var(--secondary-color);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            margin-bottom: 1.5rem;
-             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-             transition: transform var(--transition-speed) ease;
-             display: flex;
-             flex-direction: column;
-             align-items: center; /* Center content */
-             text-align: center;
-        }
-         #services .service-item:hover {
-             transform: translateY(-5px);
-         }
-        #services .service-item i {
-            font-size: 2.5rem; /* Slightly larger icon */
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
-         #services .service-item h4 {
-             color: #fff;
-             margin-bottom: 0.5rem;
-         }
-         #services .service-item p {
-             font-size: 0.95rem;
-             color: var(--text-muted);
-             margin-bottom: 0;
-         }
-         .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-         }
-
-        /* --- Playlists Section --- */
-        #playlists .container { padding-top: 4rem; padding-bottom: 4rem; }
-        #playlists h4 { /* Keep playlist titles white */
-            color: #eee;
-            display: flex; /* Use flex to align title and YT link */
-            justify-content: space-between; /* Push items apart */
-            align-items: center; /* Vertically align */
-            gap: 1rem; /* Space between title and icon */
-        }
-        .ytm-link { /* Style the YouTube Music link */
-            font-size: 1.4rem; /* Adjust icon size */
-            color: var(--text-muted);
-            transition: color var(--transition-speed) ease;
-            white-space: nowrap; /* Prevent icon wrapping */
-        }
-        .ytm-link:hover {
-            color: #FF0000; /* YouTube red on hover */
-            text-decoration: none;
-        }
-        #all-playlists-container {
-            display: none; /* Hidden by default */
-            margin-top: 2rem; /* Add space when expanded */
-             /* Smooth transition could be added, but display:none doesn't transition well. Opacity/height animation is more complex for this many items */
-        }
-         #toggle-playlists-btn {
-             margin-top: 2.5rem;
-         }
-
-
-        /* --- Contact Section --- */
-        #contact {
-             background-color: var(--secondary-color);
-             padding-top: 4rem; padding-bottom: 4rem;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .social-icons a {
-            font-size: 2.2rem;
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: transform var(--transition-speed) ease, color var(--transition-speed) ease;
-            padding: 0.5rem;
-        }
-
-        .social-icons a:hover {
-            color: var(--accent-color);
-            transform: scale(1.2) translateY(-3px);
-            text-decoration: none; /* Remove underline on icon hover */
-        }
-
-        .contact-email {
-            margin-top: 3rem;
-            font-size: 1.1rem;
-        }
-         .contact-email i {
-             margin-right: 0.5rem;
-         }
-         .contact-email a { color: var(--text-muted); }
-         .contact-email a:hover { color: var(--accent-color); }
-
-        /* --- Footer --- */
-        #main-footer {
-            background-color: var(--bg-color);
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 2px; /* Match section spacing */
-            border-top: 1px solid var(--secondary-color);
-        }
-        #main-footer p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
+        .portfolio-item-content h3 {
+            font-size: 1.7rem;
             margin-bottom: 0.5rem;
         }
-         #main-footer .footer-links a {
-             color: var(--text-muted);
-             margin: 0 0.5rem;
-             font-size: 0.85rem;
-         }
-         #main-footer .footer-links a:hover {
-             color: var(--accent-color);
-         }
+        .portfolio-item-content p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .portfolio-item-content .platforms a {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        .portfolio-item-content .platforms a:hover i {
+            transform: scale(1.1);
+        }
 
+        /* Future Vision Section */
+        #future-vision ul {
+            list-style: none;
+            padding-left: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #future-vision li {
+            background-color: var(--card-bg-color);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        #future-vision li i {
+            color: var(--accent-color);
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
 
-        /* --- Scroll-to-Top Button --- */
-        #scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--accent-color);
-            color: var(--text-dark); /* Use dark text */
-            border: none;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            font-size: 1.2rem;
+        /* Contact Section */
+        .contact-form {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: var(--card-bg-color);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.9rem 1.1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: var(--secondary-bg-color);
+            color: var(--primary-text-color);
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(0, 207, 232, 0.25);
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .contact-form .btn {
+            width: 100%;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #0a0a0a;
+            color: var(--text-color);
             text-align: center;
-            line-height: 45px; /* Center icon vertically */
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            z-index: 999;
-            transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
         }
-        #scroll-to-top:hover {
-            background-color: var(--accent-hover);
+        .footer .social-links a {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
-        #scroll-to-top.visible {
-            opacity: 1;
-            visibility: visible;
+        .footer .social-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
         }
-
-
-        /* --- Animations --- */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        .footer .copyright {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .footer .copyright a {
+            font-weight: bold;
         }
 
-        /* --- Responsive Design --- */
+        /* Responsive Design */
         @media (max-width: 992px) {
-            h2 { font-size: 2.2rem; }
-            .container { width: 95%; padding: 4rem 1rem; }
-             #hero h1 { font-size: 3rem; }
-            #hero .subtitle { font-size: 1.2rem; }
-             #about .about-content { flex-direction: column; align-items: center; }
-             #about .about-image { margin-top: 2rem; order: -1; /* Move image above text on mobile */ }
-             #about .about-text { text-align: center; } /* Center text when stacked */
-             .artist-alias { display: block; } /* Stack aliases nicely */
-             .artist-details { text-align: left; } /* Keep details text left-aligned */
-
-             .services-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); } /* Adjust service grid */
+            .navbar .logo { font-size: 1.3rem; } /* Adjust logo for smaller screens */
+            .navbar .nav-links li { margin-left: 20px; }
+            h2 { font-size: 2.4rem; }
+            #hero h1 { font-size: 3rem; }
+            #hero p.subtitle { font-size: 1.3rem; }
+            .skills-grid { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
-            body { font-size: 15px; }
-            h2 { font-size: 2rem; margin-bottom: 2rem;}
-            .container { padding: 3rem 1rem; }
-             html { scroll-padding-top: 60px; }
-
-             /* Mobile Navigation */
-             #navbar { height: 60px; }
-             #navbar ul {
-                 display: none;
-                 flex-direction: column;
-                 position: fixed; /* Use fixed for full height feel */
-                 top: 0; /* Start from top */
-                 left: 0;
-                 width: 100%;
-                 height: 100vh; /* Full viewport height */
-                 background-color: var(--primary-color);
-                 padding-top: 70px; /* Space for header */
-                 box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-                 gap: 0;
-                 overflow-y: auto; /* Allow scrolling if menu is long */
-                 transition: transform 0.4s ease-in-out; /* Smooth slide-in */
-                 transform: translateX(-100%); /* Start off-screen */
-             }
-            #navbar ul.active {
-                 display: flex;
-                 transform: translateX(0); /* Slide in */
+            .navbar .container { flex-wrap: wrap; } /* Allow wrapping for logo and toggle */
+            .navbar .logo { font-size: 1.5rem; margin-bottom: 0; } /* Ensure logo is visible */
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 68px; /* Adjust based on navbar height, ensure it's accurate */
+                left: 0;
+                background-color: var(--secondary-bg-color);
+                border-top: 1px solid var(--border-color);
             }
-            #navbar ul li { width: 100%; text-align: center; }
-            #navbar ul li a {
-                display: block;
-                padding: 1.2rem; /* Larger tap area */
-                font-size: 1.1rem; /* Larger font */
-                border-bottom: 1px solid var(--secondary-color);
-             }
-            #navbar ul li:last-child a { border-bottom: none; }
-            #navbar ul li a::after { display: none; }
+            .navbar .nav-links.active { display: flex; }
+            .navbar .nav-links li { margin: 0; text-align: center; }
+            .navbar .nav-links li a { padding: 1.2rem; display: block; border-bottom: 1px solid var(--border-color); }
+            .navbar .nav-links li:last-child a { border-bottom: none; }
+            .menu-toggle { display: block; margin-left: auto; } /* Push toggle to the right */
 
-             .menu-toggle { display: flex; }
-            .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-            .menu-toggle.active span:nth-child(2) { opacity: 0; }
-            .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
 
-            #hero { min-height: 80vh; background-attachment: scroll; }
+            h2 { font-size: 2rem; }
             #hero h1 { font-size: 2.5rem; }
-            #hero .subtitle { font-size: 1.1rem; }
-            .hero-content .hero-buttons { gap: 0.8rem; } /* Slightly reduce gap */
-             .hero-content .hero-buttons .btn {
-                width: calc(50% - 0.4rem); /* Try two buttons per row */
-                min-width: 150px; /* Ensure they don't get too small */
-                font-size: 0.85rem;
-                padding: 0.8rem 1rem;
-            }
-
-             .media-grid { grid-template-columns: 1fr; }
-             .services-grid { grid-template-columns: 1fr; }
-
-             .social-icons a { font-size: 2rem; } /* Slightly smaller social icons */
-             #scroll-to-top { width: 40px; height: 40px; font-size: 1.1rem; line-height: 40px; bottom: 15px; right: 15px; }
+            #hero p.subtitle { font-size: 1.2rem; }
+            .featured-playlists-grid { grid-template-columns: 1fr; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            #playlsd-ecosystem .subsection, .contact-form { padding: 1.5rem; }
         }
-
-         @media (max-width: 480px) {
-             #hero { min-height: 75vh; }
-             #hero h1 { font-size: 2.1rem; }
-            #hero .subtitle { font-size: 1rem; }
-             h2 { font-size: 1.8rem; }
-             /* Hero Buttons stack vertically on smallest screens */
-             .hero-content .hero-buttons .btn {
-                 width: 85%;
-                 margin-bottom: 0.5rem; /* Add space when stacked */
-             }
-             .hero-content .hero-buttons .btn:last-child { margin-bottom: 0; }
-
-             #about .about-image img { max-width: 180px; border-width: 3px; } /* Smaller profile pic */
-             .container { padding: 2.5rem 1rem; }
-             .social-icons a { font-size: 1.8rem; }
-         }
-
+        @media (max-width: 480px) {
+            .navbar .logo { font-size: 1.2rem; }
+            h2 { font-size: 1.8rem; margin-bottom: 2rem; }
+            #hero h1 { font-size: 2rem; }
+            #hero p.subtitle { font-size: 1rem; }
+            .btn { padding: 12px 24px; font-size: 0.9rem; }
+            section { padding: 60px 0; }
+            .footer .social-links a { font-size: 1.8rem; margin: 0 10px; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
-    <header id="main-header">
-        <nav id="navbar">
-            <a href="#hero" class="logo">Khalid Bin Alam <span>// PlayLSD</span></a>
-            <button class="menu-toggle" id="mobile-menu" aria-label="Open Menu" aria-expanded="false" aria-controls="nav-links">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul id="nav-links" role="menu">
-                <li role="none"><a href="#hero" class="active" role="menuitem">Home</a></li>
-                <li role="none"><a href="#about" role="menuitem">About</a></li>
-                <li role="none"><a href="#music" role="menuitem">Music</a></li>
-                <li role="none"><a href="#dj" role="menuitem">Mix's</a></li>
-                <li role="none"><a href="#playlsd" role="menuitem">PlayLSD</a></li>
-                <li role="none"><a href="#services" role="menuitem">Hire/Booking/Collab</a></li>
-                <li role="none"><a href="#playlists" role="menuitem">Playlists</a></li>
-                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+    <!-- Header -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="file:///C:/Users/Zalvix/Desktop/index.html#hero" class="logo">অপূর্ব<span> | </span>ZALVIX</a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#hero" class="active">Home</a></li>
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#about" class="">About</a></li>
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#playlsd-ecosystem" class="">PlayLSD</a></li>
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#skills" class="">Skills</a></li>
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#portfolio" class="">Music</a></li>
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#future-vision" class="">Vision</a></li>
+                <li><a href="file:///C:/Users/Zalvix/Desktop/index.html#contact" class="">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Khalid Bin Alam</h1>
-                <p class="subtitle">Audio Engineer | Music Artist (Zalvix, Luminous Lullabies) | DJ | Founder @ PlayLSD Records</p>
-                <div class="hero-buttons">
-                    <!-- Existing -->
-                    <a href="#playlsd" class="btn"><i class="fas fa-record-vinyl"></i> Explore PlayLSD</a>
-                    <a href="#music" class="btn btn-secondary"><i class="fas fa-music"></i> Listen to Music</a>
-                    <!-- New -->
-                    <a href="#playlists" class="btn"><i class="fas fa-list-ol"></i> View Playlists</a>
-                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Submit Demo</a>
-                    <a href="#contact" class="btn"><i class="fas fa-calendar-alt"></i> Submit to Playlist</a> <!-- IMPORTANT: Link to specific form or contact section -->
-                    <a href="#" class="btn btn-secondary"><i class="fas fa-handshake"></i> Book Meeting</a> <!-- IMPORTANT: Replace '#' with your Calendly or booking link -->
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>KHALID BIN ALAM</h1>
+        <p class="subtitle">Genre-Defying Electronic Music Producer, Playlist Curator &amp; Tech Entrepreneur.<br>Founder of <span>PlayLSD</span>.</p>
+        <div class="cta-buttons">
+            <a href="file:///C:/Users/Zalvix/Desktop/index.html#portfolio" class="btn">My Music</a>
+            <a href="https://playlsd.site/" target="_blank" class="btn btn-outline">Explore PlayLSD</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am Khalid Bin Alam, an electronic music producer, playlist curator, and tech entrepreneur hailing from Cumilla, Bangladesh. With a dynamic career spanning over six years, I immerse myself in music production, audio engineering, digital marketing, and web development. My passion lies in redefining the landscape for independent creatives in today's music industry.</p>
+                    <p>As the founder of <strong>PlayLSD</strong>, I've built more than just a brand—it's a vibrant music discovery platform. My mission is to bridge the gap between emerging underground artists and a global audience of electronic music enthusiasts. I thrive on innovation, authenticity, and fostering a strong sense of community.</p>
+                    <p>My creative expression takes form under two distinct musical aliases:</p>
+                    <ul>
+                        <li><strong>🎵 Zalvix:</strong> Crafting high-energy EDM that combines melodic house, future bass, and festival-grade anthems, designed for both mainstage impact and intimate listening.</li>
+                        <li><strong>🌌 Luminous Lullabies:</strong> Exploring the serene realms of ambient and downtempo music, creating atmospheric journeys with organic textures and minimalist soundscapes perfect for meditation and deep focus.</li>
+                    </ul>
+                    <p>Every track is a personal endeavor – 100% self-produced, mixed, and mastered, reflecting my commitment to sonic precision and genuine artistic vision.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section (Keep as is) -->
-        <section id="about" class="fade-in">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                     <div class="about-image">
-                        <img src="https://via.placeholder.com/280/1e1e1e/e0e0e0?text=Khalid" alt="Khalid Bin Alam profile picture">
-                    </div>
-                    <div class="about-text">
-                        <p>Hey! I'm Khalid Bin Alam, a passionate audio professional deeply immersed in the world of electronic music. With over 6 years shaping sounds, I wear multiple hats in the industry.</p>
+    <!-- PlayLSD Ecosystem Section -->
+    <section id="playlsd-ecosystem" class="alternate-bg">
+        <div class="container">
+            <h2>PlayLSD: The Ecosystem</h2>
+            <p style="text-align:center; max-width:800px; margin: -2rem auto 3rem auto;">PlayLSD is not just a playlist—it’s a full-stack digital ecosystem where sound, strategy, and storytelling converge. We connect emerging underground artists with global electronic music fans.</p>
 
-                        <h4>My Creative Aliases:</h4>
-                        <ul>
-                            <li>
-                                <span class="artist-alias" onclick="toggleDetails('zalvix-details', this)" aria-expanded="false" aria-controls="zalvix-details">
-                                    Zalvix <i class="fas fa-chevron-right toggle-icon"></i>
-                                </span>
-                                <div id="zalvix-details" class="artist-details">
-                                    <p><strong>Focus:</strong> Chill House & Electronic Dance Music (EDM).</p>
-                                    <p>Under Zalvix, I explore rhythmic grooves, atmospheric soundscapes, and melodies crafted for both clubs and contemplative listening. It's about finding the balance between energy and emotion.</p>
-                                    <div class="artist-socials">
-                                        <!-- IMPORTANT: Replace # with actual Zalvix links -->
-                                        <a href="#" target="_blank" title="Zalvix Spotify" aria-label="Zalvix Spotify"><i class="fab fa-spotify"></i></a>
-                                        <a href="#" target="_blank" title="Zalvix SoundCloud" aria-label="Zalvix SoundCloud"><i class="fab fa-soundcloud"></i></a>
-                                        <a href="https://instagram.com/zalvixmusic" target="_blank" title="Zalvix Instagram" aria-label="Zalvix Instagram"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" target="_blank" title="Zalvix YouTube" aria-label="Zalvix YouTube"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="artist-alias" onclick="toggleDetails('luminous-details', this)" aria-expanded="false" aria-controls="luminous-details">
-                                    Luminous Lullabies <i class="fas fa-chevron-right toggle-icon"></i>
-                                </span>
-                                <div id="luminous-details" class="artist-details">
-                                    <p><strong>Focus:</strong> Spiritual Ambient & Relaxing Soundscapes.</p>
-                                    <p>This project is dedicated to creating calming auditory experiences for meditation, focus, sleep, or simply unwinding. Expect ethereal textures and evolving sonic landscapes.</p>
-                                     <div class="artist-socials">
-                                         <!-- IMPORTANT: Replace # with actual Luminous Lullabies links -->
-                                        <a href="#" target="_blank" title="Luminous Lullabies Spotify" aria-label="Luminous Lullabies Spotify"><i class="fab fa-spotify"></i></a>
-                                        <a href="#" target="_blank" title="Luminous Lullabies YouTube" aria-label="Luminous Lullabies YouTube"><i class="fab fa-youtube"></i></a>
-                                        <a href="#" target="_blank" title="Luminous Lullabies Instagram" aria-label="Luminous Lullabies Instagram"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <p>Beyond creating, I'm an experienced <strong>Audio Engineer</strong> specializing in mixing and mastering, helping artists achieve polished, professional sound. As a <strong>DJ</strong>, I love curating journeys through diverse electronic genres.</p>
-                        <p>My passion culminated in founding <strong>PlayLSD Records</strong>, a platform dedicated to discovering and promoting fresh talent in the electronic music scene. My mission is to blend creativity with technical expertise and foster a vibrant community.</p>
-                    </div>
+            <div class="subsection">
+                <h3>🔥 Featured Playlists</h3>
+                <p>I curate 20+ genre-spanning playlists (house, techno, lofi, ambient, EDM, future bass, chillwave) available on Spotify and YouTube Music. Each is designed with narrative flow, targeting specific moods.</p>
+                <div class="featured-playlists-grid">
+                    <div class="playlist-card"><h4>Hype EDM for Adrenaline Boost</h4></div>
+                    <div class="playlist-card"><h4>Lofi Ambient for Study &amp; Chill</h4></div>
+                    <div class="playlist-card"><h4>Future Vibes for Creators</h4></div>
+                    <div class="playlist-card"><h4>Underground House &amp; Techno Vault</h4></div>
+                </div>
+                <p style="margin-top: 1rem;">These are sonic journeys offering visibility to undiscovered gems and rising talents.</p>
+                 <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://open.spotify.com/user/31k42esrprh77kbyfxpud3qyhsky" target="_blank" class="btn" style="margin-right:10px;">Spotify Playlists</a>
+                    <a href="https://music.youtube.com/channel/UCaDgwGSAIL33Y02c5t0k2MA" target="_blank" class="btn btn-outline">YouTube Music</a>
                 </div>
             </div>
-        </section>
 
-        <!-- Music Section (Updated with Full Descriptions) -->
-        <section id="music" class="fade-in">
-            <div class="container">
-            <h2>My Music</h2>
-            <p class="section-intro">Explore my releases under different artistic identities. Find me on your favorite streaming platforms.</p>
-            <div class="media-grid"></div>
-                <div class="media-item">
-                <h4>Zalvix (EDM)</h4>
-                <iframe title="Zalvix Spotify Profile" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1zBfm1Aa7QvuZkJhW7QBrh?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <p>Zalvix is a music producer who has a particular flair for creating club music. With a natural talent for music, Zalvix has explored various genres, including house music and other electronic dance music sub-genres. But for Zalvix, music is more than just entertainment. It's a reflection of the elements of the universe and the science behind sound waves. Through its music, Zalvix hopes to inspire a deeper understanding of the world around us and encourage others to explore the mysteries of the universe.</p>
-                <div class="artist-socials">
-                    <a href="#" target="_blank">Apple Music</a> | <a href="#" target="_blank">SoundCloud</a>
-                </p>
-                </div>
-                <div class="media-item">
-                <h4>Luminous Lullabies (Chill Electronic)</h4>
-                <iframe title="Luminous Lullabies Spotify Profile" style="border-radius:12px" src="https://open.spotify.com/artist/2zKWBmG0FeVZ36llQlfjEA?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <p>Luminous Lullabies is a chill electronic and ambient music project by Khalid Bin Alam, a producer and DJ from Cumilla, Bangladesh. Known for crafting deep, soothing soundscapes, Luminous Lullabies merges ambient textures, downtempo beats, and ethereal melodies to create a tranquil, immersive listening experience.</p>
-                <p>Rooted in chill electronic, deep house, and ambient music, Luminous Lullabies offers hypnotic DJ sets and productions that evoke calm, introspection, and emotional connection. Each track is carefully designed to promote relaxation and mindfulness, making it perfect for meditation, late-night listening, or moments of deep focus.</p>
-                <p class="platform-links">
-                    <a href="#" target="_blank">YouTube Music</a> | <a href="#" target="_blank">Bandcamp</a>
-                </p>
-                </div>
-                <div class="media-item">
-                <h4>Euphonic (Band)</h4>
-                <iframe title="Euphonic Spotify Profile" style="border-radius:12px" src="https://open.spotify.com/embed/artist/PLACEHOLDER_ARTIST_URI?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <p>Euphonic is a band project led by Khalid Bin Alam. Currently a solo endeavor, Euphonic is envisioned as a collaborative platform where new members will join to create a unique blend of sounds. The project aims to explore diverse musical landscapes, combining electronic elements with live instrumentation to craft immersive and dynamic auditory experiences.</p>
-                <p class="platform-links">
-                    <a href="#" target="_blank">Apple Music</a> | <a href="#" target="_blank">SoundCloud</a>
-                </p>
+            <div class="subsection">
+                <h3>🎧 Artist Submissions &amp; Promotion</h3>
+                <p>Through the PlayLSD submission portal, independent artists can submit their tracks for free. Accepted submissions receive:</p>
+                <ul class="tech-stack-list">
+                    <li><i class="fas fa-bullhorn"></i>Cross-platform promotion (blogs, social media, YouTube embeds).</li>
+                    <li><i class="fas fa-chart-line"></i>Metadata optimization for Spotify algorithm discoverability.</li>
+                    <li><i class="fas fa-star"></i>Feature spots in artist-focused blog posts and interviews.</li>
+                </ul>
+                <p>Using a tech-first approach, I automate submission management with Spotify API integration, Google Sheets automation, and Apps Script for efficiency and quality.</p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://playlsd.site/p/submit-music.html" target="_blank" class="btn">Submit Your Music <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            </div>
-        </section>
-
-        <!-- DJ Section (Structured for Future Mixtapes) -->
-        <section id="dj" class="fade-in">
-            <div class="container">
-            <h2>Mixtapes</h2>
-            <p class="section-intro">Follow me on SoundCloud, Mixcloud, or YouTube for the latest mixes. Each mix explores different genres, aiming to craft something unique with every track. I curate mixes and playlists based on shared vibes and musical journeys.</p>
             
-            <div class="media-grid">
-                <!-- Mixtape 1 -->
-                <div class="media-item">
-                <h4>Mixtape 1: Latest Mix</h4>
-                <iframe title="SoundCloud Mix" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1177573750&color=%2300aaff&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                <div class="platform-links">
-                    <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-soundcloud"></i> SoundCloud</a>
-                    <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-mixcloud"></i> Mixcloud</a>
-                    <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-youtube"></i> YouTube</a>
+            <div class="subsection">
+                <h3>⚙️ PlayLSD's Web Stack &amp; Tech</h3>
+                <p>Beyond music, I am the technical architect of the PlayLSD digital experience, utilizing:</p>
+                <ul class="tech-stack-list">
+                    <li><i class="fab fa-spotify"></i>Spotify API, YouTube embeds, and Google Apps Script for automation.</li>
+                    <li><i class="fab fa-html5"></i>HTML, <i class="fab fa-js-square"></i>JavaScript, and <i class="fab fa-blogger-b"></i>Blogger for front-end &amp; content.</li>
+                    <li><i class="fas fa-server"></i>Cloudflare CDN, Hostinger hosting, and custom DNS routing.</li>
+                    <li><i class="fas fa-search"></i>SEO-friendly architecture, fast-loading UI, and meta-tag optimization.</li>
+                </ul>
+                <p>The <a href="https://playlsd.site/" target="_blank">playlsd.site</a> platform is a performance-optimized hub for music, blogs, and submissions.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>💬 Global &amp; Local Artist Advocacy &amp; Community</h3>
+                <p>PlayLSD champions both Bangladeshi talent (e.g., Jved from Cumilla) and rising artists worldwide. My mission is to create an inclusive, boundary-pushing ecosystem.</p>
+                <ul class="community-list">
+                    <li><i class="fab fa-discord"></i>Join the PlayLSD Discord Server for collabs, feedback, and music talk.</li>
+                    <li><i class="fas fa-check-circle"></i>Verified Curators Program to expand the curation network.</li>
+                    <li><i class="fas fa-video"></i>Behind-the-scenes content for fans and aspiring producers.</li>
+                </ul>
+                <p>PlayLSD is a community-first movement valuing connection, transparency, and evolution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills &amp; Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-music"></i> Music Production</h3>
+                    <ul>
+                        <li><i class="fas fa-sliders-h"></i>DAWs: FL Studio, Pro Tools, Logic Pro</li>
+                        <li><i class="fas fa-headphones-alt"></i>Advanced Mixing &amp; Mastering</li>
+                        <li><i class="fas fa-wave-square"></i>Sound Design &amp; Composition</li>
+                        <li><i class="fas fa-compact-disc"></i>Live DJ Sets and Audio Design</li>
+                    </ul>
                 </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-pie"></i> Strategy &amp; Curation</h3>
+                    <ul>
+                        <li><i class="fab fa-spotify"></i>Cross-platform playlist growth (Spotify, YouTube Music)</li>
+                        <li><i class="fas fa-feather-alt"></i>Mood-based narrative development</li>
+                        <li><i class="fas fa-pen-nib"></i>Music journalism &amp; editorial writing</li>
+                        <li><i class="fas fa-users"></i>Artist Relations &amp; Discovery</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Automation &amp; Development</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i>Front-end (HTML, CSS, JS) &amp; No-code Development</li>
+                        <li><i class="fab fa-google"></i>Google Workspace Automation (Apps Script, Sheets)</li>
+                        <li><i class="fas fa-cogs"></i>API Integration (Spotify, YouTube)</li>
+                        <li><i class="fas fa-cloud"></i>Cloudflare, Hostinger, DNS, SEO &amp; Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-rocket"></i> Promotion &amp; Growth</h3>
+                    <ul>
+                        <li><i class="fab fa-instagram"></i>Digital Branding &amp; Instagram Content Strategy</li>
+                        <li><i class="fas fa-envelope-open-text"></i>Newsletter/Blog Syncing &amp; Engagement</li>
+                        <li><i class="fas fa-search-dollar"></i>Music Platform Optimization</li>
+                        <li><i class="fas fa-project-diagram"></i>Community Building &amp; Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (Original Music) -->
+    <section id="portfolio" class="alternate-bg">
+        <div class="container">
+            <h2>My Original Music</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-item-embed">
+                        <iframe width="100%" height="320" scrolling="no" frameborder="no" allow="autoplay" src="./index_files/saved_resource.html">
+                        </iframe>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3>🎵 Zalvix</h3>
+                        <p>High-energy EDM combining melodic house, future bass, and festival-grade sounds. Emotionally charged anthems for mainstage energy and headphone intimacy.</p>
+                        <div class="platforms">
+                            <a href="https://soundcloud.com/zalvix" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+                            <a href="https://open.spotify.com/artist/YOUR_ZALVIX_SPOTIFY_ID" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a> <!-- Replace with actual ID -->
+                            <a href="https://music.apple.com/us/artist/YOUR_ZALVIX_APPLE_ID" target="_blank" title="Apple Music"><i class="fab fa-apple"></i></a> <!-- Replace with actual ID -->
+                            <a href="https://music.youtube.com/channel/YOUR_ZALVIX_YTMUSIC_ID" target="_blank" title="YouTube Music"><i class="fab fa-youtube"></i></a> <!-- Replace with actual ID -->
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Placeholder for Future Mixtapes -->
-                <!-- Copy and paste the following block for new mixtapes -->
-                <!--
-                <div class="media-item">
-                <h4>Mixtape X: [Title]</h4>
-                <iframe title="SoundCloud Mix" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="[SoundCloud Embed Link]"></iframe>
-                <div class="platform-links">
-                    <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-soundcloud"></i> SoundCloud</a>
-                    <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-mixcloud"></i> Mixcloud</a>
-                    <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-youtube"></i> YouTube</a>
+                <div class="portfolio-item">
+                     <div class="portfolio-item-embed">
+                        <iframe style="border: 0; width: 100%; height: 320px;" src="./index_files/saved_resource(1).html" seamless=""> <!-- Replace with actual Bandcamp album ID -->
+                            <a href="https://luminouslullabies.bandcamp.com/">Luminous Lullabies on Bandcamp</a>
+                        </iframe>
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3>🌌 Luminous Lullabies</h3>
+                        <p>A journey into stillness and atmosphere. Explores organic textures, minimalist pads, and soothing soundscapes ideal for meditation, study, and emotional release.</p>
+                         <div class="platforms">
+                            <a href="https://luminouslullabies.bandcamp.com/" target="_blank" title="Bandcamp"><i class="fab fa-bandcamp"></i></a>
+                            <a href="https://open.spotify.com/artist/YOUR_LUMINOUS_SPOTIFY_ID" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a> <!-- Replace with actual ID -->
+                            <a href="https://music.youtube.com/channel/YOUR_LUMINOUS_YTMUSIC_ID" target="_blank" title="YouTube Music"><i class="fab fa-youtube"></i></a> <!-- Replace with actual ID -->
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Future Vision Section -->
+    <section id="future-vision">
+        <div class="container">
+            <h2>🚀 Future Vision for PlayLSD</h2>
+            <p style="text-align:center; max-width:800px; margin: -2rem auto 3rem auto;">I'm actively expanding PlayLSD into a next-gen digital label and discovery engine. My long-term vision is to make PlayLSD a launchpad for bold, boundary-pushing electronic music, amplifying unheard voices from Bangladesh and beyond. Upcoming features include:</p>
+            <ul>
+                <li><i class="fas fa-broadcast-tower"></i>🎙️ Live Online Events &amp; Curated Radio Streams</li>
+                <li><i class="fas fa-video"></i>📽️ Video Content: Track Breakdowns, Artist Interviews</li>
+                <li><i class="fas fa-brain"></i>🎛️ AI-powered song recommendations &amp; mood filters</li>
+                <li><i class="fab fa-discord"></i>🎧 Deeper Discord integration for real-time listening sessions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="alternate-bg">
+        <div class="container">
+            <h2>📬 Get In Touch</h2>
+            <p style="text-align:center; max-width:700px; margin: -2rem auto 3rem auto;">For press inquiries, interviews, partnerships, features, or just to connect, feel free to reach out. I'm always open to collaborations and new ideas.</p>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form"> 
+                <!-- 
+                    IMPORTANT: How to use this contact form:
+                    1. Go to https://formspree.io/ and sign up for a free account.
+                    2. Create a new form. You'll get an endpoint URL like "https://formspree.io/f/your_unique_id".
+                    3. Replace "YOUR_FORMSPREE_ID" in the action attribute above with your unique ID (e.g., "mvoezzqy").
+                    That's it! Submissions will be sent to your registered email.
                 -->
-            </div>
-            </div>
-        </section>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required="">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required=""></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
 
-        <!-- PlayLSD Section (Enhanced with Qbic Pulse Introduction) -->
-        <section id="playlsd" class="fade-in">
-            <div class="container">
-            <h2>PlayLSD Records</h2>
-            <p class="playlsd-description"></p>
-                <strong>PlayLSD</strong> is more than just a label; it's a launchpad for innovative electronic music artists. Founded on genuine artist discovery and promotion, we curate high-quality playlists and releases, focusing on underground sounds and emerging talent. Our mission is to amplify unique voices in electronic music and foster a thriving community of creators and listeners.
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="margin-bottom: 1.5rem; font-size: 1.2rem;">🔍 Explore My Work &amp; Connect:</p>
+            <div class="social-links">
+                <a href="https://playlsd.site/" target="_blank" aria-label="PlayLSD Website" title="PlayLSD Website"><i class="fas fa-globe"></i></a>
+                <a href="https://www.linkedin.com/in/khalidbinalam/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/playlsd.official" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://soundcloud.com/zalvix" target="_blank" aria-label="Zalvix SoundCloud" title="Zalvix SoundCloud"><i class="fab fa-soundcloud"></i></a>
+                <a href="https://luminouslullabies.bandcamp.com/" target="_blank" aria-label="Luminous Lullabies Bandcamp" title="Luminous Lullabies Bandcamp"><i class="fab fa-bandcamp"></i></a>
+                <a href="mailto:info@playlsd.site" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">
+                © <span id="currentYear">2025</span> Khalid Bin Alam. All Rights Reserved.<br>
+                Visionary behind <a href="https://playlsd.site/" target="_blank">PlayLSD</a> - Shaping the Future of Electronic Music.
             </p>
-            <p class="playlsd-description"></p>
-                Introducing <strong>Qbic Pulse</strong>, a sub-label dedicated to the pure love and emotion for House music. Qbic Pulse stays at the forefront of sound evolution, technology, and the vibrant party culture. It's all about the groove, the vibe, and the connection that House music brings to life.
-            </p>
-            <div class="media-grid">
-                <div class="media-item">
-                <h4>Qbic Pulse: House Music Vibes</h4>
-                <iframe title="Qbic Pulse Playlist" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-            </div>
-        </section>
-
-            <div class="submission-cta">
-                <h3>Join the Community</h3>
-                <div class="hero-buttons">
-                <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> Submit Demo</a>
-                <a href="#contact" class="btn btn-secondary"><i class="fas fa-list-alt"></i> Pitch a Playlist</a>
-                </div>
-            </div>
-
-            <div class="social-icons text-center" style="margin-top: 2rem;">
-                <a href="https://instagram.com/playlsd" target="_blank" title="PlayLSD Instagram" aria-label="PlayLSD Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/playlsd" target="_blank" title="PlayLSD Facebook" aria-label="PlayLSD Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/playlsd" target="_blank" title="PlayLSD Twitter" aria-label="PlayLSD Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://youtube.com/@playlsd" target="_blank" title="PlayLSD YouTube" aria-label="PlayLSD YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://soundcloud.com/playlsd" target="_blank" title="PlayLSD SoundCloud" aria-label="PlayLSD SoundCloud"><i class="fab fa-soundcloud"></i></a>
-                <a href="https://mixcloud.com/playlsd" target="_blank" title="PlayLSD Mixcloud" aria-label="PlayLSD Mixcloud"><i class="fab fa-mixcloud"></i></a>
-                <a href="https://spotify.com/playlsd" target="_blank" title="PlayLSD Spotify" aria-label="PlayLSD Spotify"><i class="fab fa-spotify"></i></a>
-                <a href="https://tiktok.com/@playlsd" target="_blank" title="PlayLSD TikTok" aria-label="PlayLSD TikTok"><i class="fab fa-tiktok"></i></a>
-            </div>
-            </div>
-        </section>
-        <section id="playlists" class="fade-in">
-            <div class="container">
-            <h2>PlayLSD Curated Playlists</h2>
-            <p class="section-intro">Dive into the sounds curated by PlayLSD across various electronic music vibes. Listen on Spotify or YouTube Music.</p>
-
-            <!-- Featured/Initial Playlists Grid -->
-            <div class="media-grid" id="featured-playlists-grid">
-                <div class="media-item">
-                <h4>
-                    <span>Playlist Name 1: Deep Vibes</span>
-                    <a href="#" class="ytm-link" target="_blank" title="Listen on YouTube Music" aria-label="Listen on YouTube Music"><i class="fab fa-youtube"></i></a>
-                </h4>
-                <iframe title="PlayLSD Playlist 1" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXa2PscTdCXx7?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="media-item">
-                <h4>
-                    <span>Playlist Name 2: Chill Beats</span>
-                    <a href="#" class="ytm-link" target="_blank" title="Listen on YouTube Music" aria-label="Listen on YouTube Music"><i class="fab fa-youtube"></i></a>
-                </h4>
-                <iframe title="PlayLSD Playlist 2" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4dyzvuaRJ0n?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="media-item">
-                <h4>
-                    <span>Playlist Name 3: Uplifting Trance</span>
-                    <a href="#" class="ytm-link" target="_blank" title="Listen on YouTube Music" aria-label="Listen on YouTube Music"><i class="fab fa-youtube"></i></a>
-                </h4>
-                <iframe title="PlayLSD Playlist 3" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-
-            <!-- Button to toggle more playlists -->
-            <div class="text-center">
-                <button id="toggle-playlists-btn" class="btn mt-3">View All Playlists</button>
-            </div>
-
-            <!-- Hidden Container for All Other Playlists -->
-            <div id="all-playlists-container">
-                <div class="media-grid" id="more-playlists-grid">
-                <div class="media-item">
-                    <h4>
-                    <span>Playlist Name 4: Melodic House</span>
-                    <a href="#" class="ytm-link" target="_blank" title="Listen on YouTube Music" aria-label="Listen on YouTube Music"><i class="fab fa-youtube"></i></a>
-                    </h4>
-                    <iframe title="PlayLSD Playlist 4" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/PLACEHOLDER_SPOTIFY_URI_4?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="media-item">
-                    <h4>
-                    <span>Playlist Name 5: Techno Pulse</span>
-                    <a href="#" class="ytm-link" target="_blank" title="Listen on YouTube Music" aria-label="Listen on YouTube Music"><i class="fab fa-youtube"></i></a>
-                    </h4>
-                    <iframe title="PlayLSD Playlist 5" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/PLACEHOLDER_SPOTIFY_URI_5?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="media-item">
-                    <h4>
-                    <span>Playlist Name 20: Ambient Worlds</span>
-                    <a href="#" class="ytm-link" target="_blank" title="Listen on YouTube Music" aria-label="Listen on YouTube Music"><i class="fab fa-youtube"></i></a>
-                    </h4>
-                    <iframe title="PlayLSD Playlist 20" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/PLACEHOLDER_SPOTIFY_URI_20?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section id="services" class="fade-in">
-            <div class="container">
-                <h2>Audio Engineering Services</h2>
-                <p class="section-intro">Leveraging production experience to help you achieve a professional, polished sound for your tracks. Get in touch to discuss your project.</p>
-                 <div class="services-grid">
-                     <div class="service-item">
-                         <i class="fas fa-sliders-h"></i>
-                         <h4>Mixing</h4>
-                         <p>Balancing levels, EQ, compression, and effects for a clear, impactful mix ready for mastering.</p>
-                     </div>
-                      <div class="service-item">
-                         <i class="fas fa-chart-line"></i>
-                         <h4>Mastering</h4>
-                         <p>The final polish. Ensuring loudness, tonal balance, and dynamic consistency for commercial release.</p>
-                     </div>
-                      <div class="service-item">
-                         <i class="fas fa-headphones-alt"></i>
-                         <h4>Production Assistance</h4>
-                         <p>Need help with arrangement, sound design, or realising your musical ideas? Let's collaborate.</p>
-                     </div>
-                 </div>
-                 <div class="text-center" style="margin-top: 2.5rem;">
-                    <a href="#contact" class="btn">Inquire About Services</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section (Keep as is, update links) -->
-        <section id="contact" class="fade-in">
-            <div class="container text-center">
-                <h2>Get In Touch</h2>
-                <p class="section-intro">Connect via social media, book a meeting, or send an email for collaborations, service inquiries, playlist submissions, or demo submissions to PlayLSD Records.</p>
-
-                <div class="social-icons">
-                    <!-- Replace '#' with actual profile links -->
-                    <a href="#" target="_blank" title="LinkedIn Profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" title="Facebook Profile" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
-                    <a href="#" target="_blank" title="X (formerly Twitter) Profile" aria-label="X Profile"><i class="fab fa-x-twitter"></i></a>
-                </div>
-
-                <p class="contact-email">
-                    For professional inquiries & bookings:
-                    <!-- IMPORTANT: Replace with your actual email address -->
-                    <a href="mailto:khalidbin.alam@gmail.com"><i class="fas fa-envelope"></i> zalvix@badenstock.com</a>
-                </p>
-                 <!-- Add specific links for forms if preferred over email -->
-                 <!--
-                 <p style="margin-top: 1rem;">
-                    <a href="YOUR_DEMO_SUBMISSION_FORM_LINK" target="_blank" class="btn btn-secondary">Demo Submission Form</a> |
-                    <a href="YOUR_PLAYLIST_SUBMISSION_FORM_LINK" target="_blank" class="btn btn-secondary">Playlist Submission Form</a> |
-                    <a href="YOUR_BOOKING_LINK" target="_blank" class="btn btn-secondary">Book a Meeting Link</a>
-                 </p>
-                 -->
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer (Keep as is, update link) -->
-    <footer id="main-footer">
-        <p>© <span id="year"></span> Khalid Bin Alam | PlayLSD Records. All Rights Reserved.</p>
-        <p class="footer-links">
-             <!-- IMPORTANT: Replace # with your GitHub profile link -->
-             <a href="https://github.com/zalvix" target="_blank" title="GitHub Profile" aria-label="GitHub Profile"><i class="fab fa-github"></i> GitHub</a>
-            <!-- | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> -->
-        </p>
+        </div>
     </footer>
 
-    <!-- Scroll-to-Top Button HTML -->
-    <button id="scroll-to-top" title="Go to top" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- ------------------------- -->
-    <!-- --- JavaScript Starts --- -->
-    <!-- ------------------------- -->
     <script>
-        // --- Dynamic Year ---
-        document.getElementById('year').textContent = new Date().getFullYear();
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        let offset = 0;
+                        const navbar = document.getElementById('navbar');
+                        if (navbar && getComputedStyle(navbar).position === 'sticky') {
+                            offset = navbar.offsetHeight;
+                        }
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - offset;
 
-        // --- Mobile Navigation Toggle ---
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.getElementById('nav-links');
-        const body = document.body; // Get body element
-
-        menuToggle.addEventListener('click', () => {
-            const isExpanded = menuToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            menuToggle.setAttribute('aria-expanded', isExpanded);
-            body.style.overflow = isExpanded ? 'hidden' : '';
-        });
-
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                    menuToggle.setAttribute('aria-expanded', 'false');
-                    body.style.overflow = ''; // Re-enable body scroll
-                }
-            });
-        });
-
-        document.addEventListener('click', (event) => {
-            const isClickInsideNav = navLinks.contains(event.target);
-            const isClickOnToggle = menuToggle.contains(event.target);
-
-            if (!isClickInsideNav && !isClickOnToggle && navLinks.classList.contains('active')) {
-                 menuToggle.classList.remove('active');
-                 navLinks.classList.remove('active');
-                 menuToggle.setAttribute('aria-expanded', 'false');
-                 body.style.overflow = ''; // Re-enable body scroll
-            }
-        });
-
-
-        // --- Smooth Scrolling & Active Link Highlighting ---
-        const header = document.getElementById('main-header');
-        // Use a more robust way to get header height after potential layout shifts
-        let headerHeight = 70;
-        function updateHeaderHeight() {
-            headerHeight = header ? header.offsetHeight : (window.innerWidth <= 768 ? 60 : 70);
-        }
-        // Update on load and resize
-        window.addEventListener('load', updateHeaderHeight);
-        window.addEventListener('resize', updateHeaderHeight);
-
-
-        const navLinksAnchors = document.querySelectorAll('#nav-links a');
-        const sections = document.querySelectorAll('main section');
-
-        function smoothScrollTo(targetId) {
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                updateHeaderHeight(); // Ensure height is current
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.scrollY - headerHeight;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
-        navLinksAnchors.forEach(link => {
-            link.addEventListener('click', function(e) {
-                 const href = this.getAttribute('href');
-                 if (href && href.startsWith('#') && href.length > 1) {
-                     e.preventDefault();
-                     smoothScrollTo(href.substring(1));
-                 }
-            });
-        });
-
-         function highlightNavLink() {
-            updateHeaderHeight(); // Ensure height is current for calc
-            let currentSectionId = '';
-            const scrollPosition = window.scrollY + headerHeight + 50;
-
-             // Find the current section in view
-             // Iterate backwards to find the last section that starts above the scroll position marker
-            for (let i = sections.length - 1; i >= 0; i--) {
-                 if (sections[i].offsetTop <= scrollPosition) {
-                     currentSectionId = sections[i].id;
-                     break; // Found the current section
-                 }
-            }
-             // Fallback to hero if very top
-             if (window.scrollY < (sections[0]?.offsetTop || 0) - headerHeight - 50 || !currentSectionId) {
-                 currentSectionId = 'hero';
-             }
-
-
-            navLinksAnchors.forEach((link) => {
-                link.classList.remove('active');
-                // Handle edge case where targetId might not exactly match link href
-                const linkHref = link.getAttribute('href');
-                if (linkHref === `#${currentSectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-         }
-
-         function debounce(func, wait = 15, immediate = false) {
-             var timeout;
-             return function() {
-                 var context = this, args = arguments;
-                 var later = function() {
-                     timeout = null;
-                     if (!immediate) func.apply(context, args);
-                 };
-                 var callNow = immediate && !timeout;
-                 clearTimeout(timeout);
-                 timeout = setTimeout(later, wait);
-                 if (callNow) func.apply(context, args);
-             };
-         };
-
-         const debouncedHighlight = debounce(highlightNavLink, 50);
-
-         // Initial setup after slight delay for accurate measurements
-         window.addEventListener('load', () => {
-             setTimeout(() => {
-                 updateHeaderHeight();
-                 highlightNavLink();
-             }, 100); // Delay allows layout shifts to settle
-         });
-
-         window.addEventListener('scroll', debouncedHighlight);
-
-
-        // --- Expandable Artist Details Toggle ---
-        function toggleDetails(elementId, triggerElement) {
-            const detailsDiv = document.getElementById(elementId);
-            if (!detailsDiv) return;
-            const isVisible = detailsDiv.classList.contains('visible');
-
-             if (isVisible) {
-                 detailsDiv.style.maxHeight = detailsDiv.scrollHeight + "px";
-                  requestAnimationFrame(() => {
-                    detailsDiv.style.maxHeight = '0';
-                    detailsDiv.style.opacity = '0';
-                  });
-                 detailsDiv.addEventListener('transitionend', function handleTransitionEnd(e) {
-                    if (e.propertyName === 'opacity' && detailsDiv.style.opacity === '0') {
-                       detailsDiv.classList.remove('visible');
-                       detailsDiv.style.display = 'none';
-                       detailsDiv.removeEventListener('transitionend', handleTransitionEnd);
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
                     }
-                 }, { once: false }); // Ensure listener fires until opacity transition ends
-                 triggerElement.classList.remove('open');
-                 triggerElement.setAttribute('aria-expanded', 'false');
-             } else {
-                 detailsDiv.style.display = 'block';
-                 detailsDiv.classList.add('visible');
-                 requestAnimationFrame(() => {
-                    detailsDiv.style.maxHeight = detailsDiv.scrollHeight + "px";
-                    detailsDiv.style.opacity = '1';
-                 });
-                 triggerElement.classList.add('open');
-                 triggerElement.setAttribute('aria-expanded', 'true');
-             }
+                    // Close mobile menu if open
+                    const navMenu = document.getElementById('nav-menu');
+                    const menuToggle = document.getElementById('mobile-menu'); // Defined here
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        if (menuToggle) { // Check if menuToggle exists
+                           menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (menuToggle && navMenu) { // Ensure elements exist before adding listener
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                menuToggle.innerHTML = navMenu.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+        }
+        
+        // Update Copyright Year
+        const currentYearElement = document.getElementById('currentYear');
+        if (currentYearElement) { // Ensure element exists
+            currentYearElement.textContent = new Date().getFullYear();
         }
 
 
-        // --- Scroll-to-Top Button Logic ---
-        const scrollToTopBtn = document.getElementById('scroll-to-top');
-        const scrollThreshold = 300;
+        // Active link highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar .nav-links a');
+        const navbar = document.getElementById('navbar'); // Defined once
+        
+        function changeLinkState() {
+            if (!navbar) return; // Exit if navbar isn't found
+            const navbarHeight = navbar.offsetHeight;
+            let index = sections.length;
 
-        function checkScroll() {
-             if (window.scrollY > scrollThreshold) {
-                 scrollToTopBtn.classList.add('visible');
-             } else {
-                 scrollToTopBtn.classList.remove('visible');
-             }
-         }
-
-         scrollToTopBtn.addEventListener('click', () => {
-             window.scrollTo({ top: 0, behavior: 'smooth' });
-         });
-
-         const debouncedCheckScroll = debounce(checkScroll, 100);
-         window.addEventListener('scroll', debouncedCheckScroll);
-         checkScroll(); // Initial check
-
-
-        // --- Fade-in Animation on Scroll ---
-         const fadeInElements = document.querySelectorAll('.fade-in');
-
-         const observerOptions = {
-            root: null,
-             threshold: 0.1,
-             rootMargin: "0px 0px -30px 0px"
-         };
-
-         const intersectionObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                     observer.unobserve(entry.target);
+            while(--index && window.scrollY + navbarHeight + 50 < sections[index].offsetTop) {} // Added a 50px buffer
+            
+            navLinks.forEach((link) => link.classList.remove('active'));
+            
+            if (sections[index] && sections[index].id) {
+                 const activeLink = document.querySelector(`.navbar .nav-links a[href="#${sections[index].id}"]`);
+                 if (activeLink) {
+                    activeLink.classList.add('active');
                  }
-            });
-         }, observerOptions);
+            } else if (window.scrollY < (sections[0] ? sections[0].offsetTop - navbarHeight : 50)) {
+                const homeLink = document.querySelector('.navbar .nav-links a[href="#hero"]');
+                if (homeLink) homeLink.classList.add('active');
+            }
+        }
 
-         fadeInElements.forEach(el => {
-            intersectionObserver.observe(el);
-         });
-
-
-         // --- NEW: Toggle All Playlists Visibility ---
-         const togglePlaylistsBtn = document.getElementById('toggle-playlists-btn');
-         const allPlaylistsContainer = document.getElementById('all-playlists-container');
-
-         if (togglePlaylistsBtn && allPlaylistsContainer) {
-             togglePlaylistsBtn.addEventListener('click', () => {
-                 const isHidden = allPlaylistsContainer.style.display === 'none' || allPlaylistsContainer.style.display === '';
-                 if (isHidden) {
-                     allPlaylistsContainer.style.display = 'block'; // Or 'grid' if you adjust CSS
-                     togglePlaylistsBtn.textContent = 'Hide Extra Playlists';
-                     togglePlaylistsBtn.setAttribute('aria-expanded', 'true');
-                 } else {
-                     allPlaylistsContainer.style.display = 'none';
-                     togglePlaylistsBtn.textContent = 'View All Playlists';
-                     togglePlaylistsBtn.setAttribute('aria-expanded', 'false');
-                      // Optional: Scroll up slightly so the button is still visible after collapsing
-                      // togglePlaylistsBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                 }
-             });
-              // Set initial ARIA state
-              togglePlaylistsBtn.setAttribute('aria-expanded', 'false');
-              togglePlaylistsBtn.setAttribute('aria-controls', 'all-playlists-container');
-
-         } else {
-            console.error("Playlist toggle button or container not found!");
-         }
-
+        if (sections.length > 0 && navLinks.length > 0 && navbar) { // Check if essential elements exist
+            changeLinkState(); // Initial call
+            window.addEventListener('scroll', changeLinkState);
+        }
 
     </script>
 
-</body>
-</html>
-``` 
+
+</body></html>
